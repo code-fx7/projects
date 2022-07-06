@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI-Rechner</title>
+  </head>
+  <body>
+    <h1>BMI-Rechner</h1>
+    <!-- Der Nutzer gibt ein:
+    1. Gewicht (Kilogramm)
+    2. Größe (Meter)
+  bmi = Gewicht / Größe / Größe -->
+
+    <form action="#">
+      <!-- Gewicht Input -->
+      <label for="gewicht">Gewicht (kg)</label>
+      <input type="number" id="gewicht" /> <br />
+      <!-- Größe Input -->
+      <label for="groesse">Größe (m)</label>
+      <input type="number" id="groesse" /> <br />
+      <button type="submit" onclick="calc()">Berechne !</button>
+    </form>
+
+    <!-- Ausgabe der Berechnung -->
+    <p id="ausgabe"></p>
+
+    <h2>Was ist der BMI?</h2>
+    <p>
+      Der Body-Mass-Index, kurz BMI, ist die gebräuchlichste Formel zur
+      Gewichtsberechnung. Er ergibt sich aus dem Verhältnis des Körpergewichts
+      in Kilogramm und der Körpergröße in Metern zum Quadrat. Je nach Höhe des
+      errechneten Werts unterscheidet die Deutsche Gesellschaft für Ernährung
+      (DGE) für die Auswertung fünf Kategorien: Untergewicht, Normalgewicht,
+      Übergewicht, extremes Übergewicht (Adipositas) und massive Adipositas.
+    </p>
+
+    BMI = Körpergewicht : (Körpergröße)²
+
+    <p>
+      Ein Beispiel: Ein 30-jähriger Mann mit einem Körpergewicht von 80
+      Kilogramm hat bei einer Körpergröße von 1,85 Metern einen BMI von 23,37
+      und ist damit normalgewichtig.
+    </p>
+
+    <p>
+      Ob Ihr Gewicht im grünen Bereich liegt, können Sie ganz einfach mit
+      unserem BMI-Rechner testen. Dieser basiert auf der klassischen Formel,
+      berücksichtigt aber zusätzlich das Alter.
+    </p>
+
+    <h3>BMI abhängig von Alter</h3>
+
+    <p>
+      Um eine bessere Einschätzung zum eigenen Gewicht abgeben zu können, muss
+      neben dem Gewicht und der Körpergröße auch das Alter berücksichtigt
+      werden.
+    </p>
+
+    <p>
+      Das Alter ist relevant, da sich das Normalgewicht mit dem Älterwerden
+      verschiebt. Etwa ab 40 Jahren verändern sich der Stoffwechsel und die
+      Körperzusammensetzung. Die Folge: Wir nehmen ganz natürlich an Gewicht zu,
+      das Normalgewicht verschiebt sich also und damit der empfohlene BMI.
+      Allerdings kann das Körpergewicht mit fortschreitendem Alter auch wieder
+      sinken, denn ältere Menschen bauen verstärkt an Muskelmasse ab, die
+      schwerer ist als Fett. Das führt zu einem geringeren Gewicht, sodass der
+      BMI bei älteren Normalgewichtigen fälschlicherweise auf Untergewicht
+      hindeuten kann.
+    </p>
+
+    <h3>Welche Aussagekraft hat der BMI?</h3>
+
+    <p>
+      Der BMI ist ein Richtwert mit einigen Schwächen. Neben der fehlenden
+      Berücksichtigung von Alter und Geschlecht stößt der BMI vor allem auf
+      Kritik, weil er lediglich die Körpermasse als Indikator für die Gesundheit
+      zugrunde legt und dabei nicht zwischen Fett- und Muskelmasse
+      unterscheidet. Wer viel Sport treibt und damit auch viel schwere
+      Muskelmasse besitzt, kann mit der Berechnung des BMI fälschlicherweise als
+      übergewichtig angesehen werden.
+    </p>
+
+    <p>
+      Dennoch ist der BMI eine schnelle und einfache Methode, das eigene
+      Körpergewicht einzuordnen. Neuen wissenschaftlichen Daten zufolge scheint
+      neben dem BMI vor allem der Bauchumfang nützlich zu sein, um die
+      Gesundheitsgefährdung durch Übergewicht besser einzuschätzen. Daneben gibt
+      es weitere Methoden, um das Normalgewicht zu berechnen.
+    </p>
+
+    <img
+      src="./mensch-bmi-body-mass-index-infografiken-für-männer-mit-normalem-gewicht-und-fettleibigkeit-fette-dünne-silhouetten-diagramm-217671550.jpeg"
+      alt="Body Mass Index"
+    />
+    <script src="./script.js"></script>
+  </body>
+</html>
